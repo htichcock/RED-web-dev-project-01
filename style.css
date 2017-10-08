@@ -188,6 +188,83 @@ header>a>img {
 	height: 4rem;
 }
 
+.hero-banner {
+	display: flex;
+	height: 40rem;
+	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	no-repeat 50% 6.25rem/auto 90% url("images/banner-girl.png"),
+	repeat-x center/auto 40rem url("images/flower-bkgd.jpg");
+}
+.hero-banner>a {
+	flex: 1 100%;
+	align-self: stretch;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: row wrap;
+}
+.hero-banner>a * {
+	flex: 100%;
+	text-align: center;
+}
+
+.shop-categories a {
+	flex: 1 100%;
+	align-self: stretch;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shop-categories>ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	height: 204vw;
+}
+.mens-category {
+	flex: 100%;
+	height: 50vw;
+	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	url("images/mens-category.jpg") no-repeat center/cover;
+	display: flex;
+}
+.trends-category {
+	flex:0 49%;
+	height: 49vw;
+	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	url("images/trends-category.jpg") no-repeat center/cover;
+	display: flex;
+}
+.glasses-category {
+	flex:0 49%;
+	height: 49vw;
+	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	url("images/glasses-category.jpg") no-repeat center/cover;
+	display: flex;
+}
+.sale-category {
+	flex:0 49%;
+	height: 49vw;
+	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	url("images/sale-category.jpg") no-repeat center/cover;
+	display: flex;
+}
+.bags-category {
+	flex:0 49%;
+	height: 49vw;
+	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	url("images/bags-category.jpg") no-repeat center/cover;
+	display: flex;
+}
+.womens-category {
+	flex: 100%;
+	height: 50vw;
+	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	url("images/womens-category.jpg") no-repeat center/cover;
+	display: flex;
+}
 
 /* END OF MOBILE DESIGN */
 /* TABLET DESIGN */
