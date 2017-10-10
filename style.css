@@ -166,6 +166,12 @@ body {
   font-size: 1.4rem;
   width: 100%;
 }
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+}
+a {
+	text-decoration: none;
+}
 header {
   display: flex;
   padding: 2%;
@@ -206,14 +212,6 @@ header>a>img {
 .hero-banner>a * {
 	flex: 100%;
 	text-align: center;
-}
-
-.shop-categories a {
-	flex: 1 100%;
-	align-self: stretch;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .shop-categories>ul {
@@ -265,6 +263,32 @@ header>a>img {
 	url("images/womens-category.jpg") no-repeat center/cover;
 	display: flex;
 }
+.shop-categories a {
+	flex: 1 100%;
+	align-self: stretch;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+
+.most-loved>ul {
+	display: flex;
+	overflow: hidden;
+	width:100%;
+}
+.most-loved>ul>li {
+	flex: 100%;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+.most-loved>ul>li * {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
 
 /* END OF MOBILE DESIGN */
 /* TABLET DESIGN */
