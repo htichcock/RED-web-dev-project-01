@@ -211,9 +211,13 @@ header>a>img {
 }
 .hero-banner>a * {
 	flex: 100%;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
-
+.shop-categories h2, .shop-categories p{
+	display: flex;
+	justify-content: center;
+}
 .shop-categories>ul {
 	display: flex;
 	flex-flow: row wrap;
@@ -271,25 +275,64 @@ header>a>img {
 	align-items: center;
 	font-weight: 500;
 }
-
-.most-loved>ul {
+.most-loved h2{
+	display: flex;
+	justify-content: center;
+}
+.product-display {
 	display: flex;
 	overflow: hidden;
 	width:100%;
 }
-.most-loved>ul>li {
+.product-display li {
 	flex: 100%;
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
 }
-.most-loved>ul>li * {
+.product-display li h3, .product-display li p {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 }
+.product-buttons {
+	display: flex;
+	justify-content: center;
+}
+.product-buttons button {
+	background: none;
+	border: none;
+}
 
+.sign-up {
+	height: 35rem;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), url("images/wave-bkgd.jpg") center bottom;
+}
 
+footer {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	background: #242424;
+}
+.contact-info {
+	flex: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contact-info p {
+	flex: 100%;
+	display: flex;
+	justify-content: center;
+}
+.social-media>ul {
+	display: flex;
+	justify-content: space-around;
+}
 /* END OF MOBILE DESIGN */
 /* TABLET DESIGN */
 

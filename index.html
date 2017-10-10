@@ -2,10 +2,12 @@
 
 <html>
   <head>
+    <script src="https://use.fontawesome.com/51c3393f45.js"></script>
     <title>Aloha Apparel Co.</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <header>
@@ -61,7 +63,7 @@
     </section>
     <section class="most-loved">
       <h2>Most-Loved Products</h2>
-      <ul>
+      <ul class="product-display">
         <li>
           <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
           <p>Dresses</p>
@@ -87,19 +89,17 @@
           <p>$99.00</p>
         </li>
       </ul>
-      <!-- <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button> -->
+      <ul class="product-buttons">
+        <li><button class="fa fa-circle"></button></li>
+        <li><button class="fa fa-circle"></button></li>
+        <li><button class="fa fa-circle"></button></li>
+        <li><button class="fa fa-circle"></button></li>
+      </ul>
     </section>
     <section class="sign-up">
       <h2>Sign-up for Updates</h2>
       <p>Stay updates on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-      <form action="">
+      <form action="on-sumbit">
         <input type="text">
         <button>Subscribe</button>
       </form>
@@ -112,8 +112,14 @@
         <p>1490 W Broadway</p>
         <p>Vancouver, BC, Canada</p>
       </div>
-      <div class="social-meida">
-        facebook lul
+      <div class="social-media">
+        <ul>
+          <li><a href=""><i class="fa fa-facebook-f"></i><span class="hidden">Facebook</span></a></li>
+          <li><a href=""><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a></li>
+          <li><a href=""><i class="fa fa-instagram"></i><span class="hidden">Instragram</span></a></li>
+          <li><a href=""><i class="fa fa-pinterest"></i><span class="hidden">Pinterest</span></a></li>
+          <li><a href=""><i class="fa fa-google-plus"></i><span class="hidden">Google+</span></a></li>
+        </ul>
       </div>
     </footer>
   </body>
