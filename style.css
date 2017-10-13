@@ -83,7 +83,7 @@ table {
 		url('fonts/Raleway-Light.woff') format('woff'),
 		url('fonts/Raleway-Light.ttf') format('truetype'),
 		url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -164,17 +164,19 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
-  width: 100%;
+	width: 100%;
+	color: #2d2d2d;
+	background: url('aloha-mobile.png') no-repeat center top;
 }
 h1, h2, h3 {
 	font-family: 'Playfair Display', serif;
 }
 a {
 	text-decoration: none;
+	color: #e2574c;
 }
 header {
   display: flex;
-  padding: 2%;
 	align-items: center;
 	justify-content: space-between;
   flex-flow: row wrap;
@@ -183,6 +185,11 @@ header>nav {
 	order: 1;
 	flex: 100%;
 	display: flex;
+	margin: 0 1rem;
+	padding: 1.4rem 0;
+	border-top: 1px solid #d7d7d7;
+	text-transform: uppercase;
+	font-weight: 500;
 }
 header>nav>ul {
 	flex: 100%;
@@ -191,14 +198,15 @@ header>nav>ul {
 	align-content: center;
 }
 header>a>img {
-	height: 4rem;
+	height: 4.7rem;
+	padding: 1.4rem 1rem 1rem;
 }
 
 .hero-banner {
 	display: flex;
 	height: 40rem;
-	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
-	no-repeat 50% 6.25rem/auto 90% url("images/banner-girl.png"),
+	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)),
+	no-repeat 50% 6rem/auto 92% url("images/banner-girl.png"),
 	repeat-x center/auto 40rem url("images/flower-bkgd.jpg");
 }
 .hero-banner>a {
@@ -208,15 +216,45 @@ header>a>img {
 	justify-content: center;
 	align-content: center;
 	flex-flow: row wrap;
+	color: #ffffff;
 }
-.hero-banner>a * {
+.hero-banner>a p {
 	flex: 100%;
 	display: flex;
 	justify-content: center;
+	text-transform: uppercase;
+	padding: 0.85rem;
+	font-size: 1.77rem;
+	font-weight: 500;
+	text-shadow: .24rem .24rem .24rem rgba(24,24,24,0.24);
 }
-.shop-categories h2, .shop-categories p{
+.hero-banner>a h2 {
+	flex: 100%;
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	font-size: 3.525rem;
+	text-shadow: .24rem .24rem .24rem rgba(24,24,24,0.24);
+	padding: 1.2rem;
+	margin:0 50%;
+	font-weight: normal;
+}
+
+.shop-categories h2{
+	text-align: center;
+	font-size: 3.5rem;
+	padding: 5.5rem 0 0 0;
+	font-weight: 700;
+}
+.shop-categories p {
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1.6rem;
+	padding: 2.3rem 2rem 6.5rem;
+}
+.italics {
+	font-style: italic;
+	font-weight: normal;
 }
 .shop-categories>ul {
 	display: flex;
@@ -228,42 +266,42 @@ header>a>img {
 .mens-category {
 	flex: 100%;
 	height: 50vw;
-	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), 
 	url("images/mens-category.jpg") no-repeat center/cover;
 	display: flex;
 }
 .trends-category {
 	flex:0 49%;
 	height: 49vw;
-	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), 
 	url("images/trends-category.jpg") no-repeat center/cover;
 	display: flex;
 }
 .glasses-category {
 	flex:0 49%;
 	height: 49vw;
-	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), 
 	url("images/glasses-category.jpg") no-repeat center/cover;
 	display: flex;
 }
 .sale-category {
 	flex:0 49%;
 	height: 49vw;
-	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), 
 	url("images/sale-category.jpg") no-repeat center/cover;
 	display: flex;
 }
 .bags-category {
 	flex:0 49%;
 	height: 49vw;
-	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), 
 	url("images/bags-category.jpg") no-repeat center/cover;
 	display: flex;
 }
 .womens-category {
 	flex: 100%;
 	height: 50vw;
-	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), 
 	url("images/womens-category.jpg") no-repeat center/cover;
 	display: flex;
 }
@@ -274,10 +312,22 @@ header>a>img {
 	justify-content: center;
 	align-items: center;
 	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	color: #ffffff;
+	text-shadow: .24rem .24rem .24rem rgba(24,24,24,0.24);
 }
+
 .most-loved h2{
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	font-size: 3.5rem;
+	padding: 5.8rem 0;
+	font-weight: 700;
+}
+.most-loved p {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #999999;
 }
 .product-display {
 	display: flex;
@@ -290,14 +340,30 @@ header>a>img {
 	justify-content: center;
 	flex-flow: row wrap;
 }
-.product-display li h3, .product-display li p {
+.product-display li h3 {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
+	padding: 2rem 0;
+	font-size: 2rem;
+}
+.product-display li p {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+
+}
+.product-display li p:first-of-type {
+	font-size: 1rem;
+}
+.product-display li img {
+	padding: 0.5rem;
 }
 .product-buttons {
 	display: flex;
 	justify-content: center;
+	font-size: 1.2rem;
+	padding: 5.3rem 50% 4rem;
 }
 .product-buttons button {
 	background: none;
@@ -305,12 +371,25 @@ header>a>img {
 }
 
 .sign-up {
-	height: 35rem;
+	color: #ffffff;
+	text-shadow: .24rem .24rem .24rem rgba(24,24,24,0.24);
+	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), url("images/wave-bkgd.jpg") center bottom;
+}
+.sign-up h2{
+	text-align: center;
+	font-size: 3.5rem;
+	padding: 5.5rem 0 0;
+	font-weight: 700;
+}
+.sign-up p {
+	text-align: center;
+	line-height: 3.1rem;
+	font-size: 1.6rem;
+	padding: 2.3rem 0.5rem;
+}
+.sign-up form {
 	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	background: linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), url("images/wave-bkgd.jpg") center bottom;
+	padding: 0.5rem 0 5.5rem;
 }
 
 footer {
@@ -318,21 +397,38 @@ footer {
 	flex-flow: row wrap;
 	justify-content: center;
 	background: #242424;
+	margin: 0.8rem 0 0;
+	padding: 5.4rem 0;
+	color: #ffffff;
+}
+footer a{
+	color: #ffffff;
 }
 .contact-info {
 	flex: 100%;
-	display: flex;
-	flex-flow: row wrap;
 }
 .contact-info p {
-	flex: 100%;
-	display: flex;
-	justify-content: center;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	line-height: 2rem;
+}
+.contact-info .address {
+	color: #999999;
+}
+.contact-info a{
+	text-decoration: underline;
+	display: inline-block;
+	padding: 1.7rem 0;
+}
+.social-media {
+	flex:0 12.5rem;
+	padding: 3.2rem 0 0;
 }
 .social-media>ul {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
+
 /* END OF MOBILE DESIGN */
 /* TABLET DESIGN */
 
@@ -406,7 +502,7 @@ section {
   align-items: stretch;
   justify-content: center;
   min-height: 30em;
-  background:linear-gradient(rgba(25,25,25,0.25), rgba(25,25,25,0.25)), 
+  background:linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), 
     no-repeat 50% 3.6em/17.5% url("images/banner-girl.png"), 
     repeat-x center/auto 30em url("images/flower-bkgd.jpg");
 }
