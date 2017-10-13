@@ -371,25 +371,56 @@ header>a>img {
 }
 
 .sign-up {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 	color: #ffffff;
+	padding: 5.5rem 0 5.6rem;
 	text-shadow: .24rem .24rem .24rem rgba(24,24,24,0.24);
 	background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)), url("images/wave-bkgd.jpg") center bottom;
 }
 .sign-up h2{
+	flex: 100%;
 	text-align: center;
 	font-size: 3.5rem;
-	padding: 5.5rem 0 0;
 	font-weight: 700;
 }
 .sign-up p {
+	flex: 100%;
 	text-align: center;
-	line-height: 3.1rem;
+	line-height: 3.2rem;
 	font-size: 1.6rem;
-	padding: 2.3rem 0.5rem;
+	padding: 2.2rem 0.5rem 2.8rem;
 }
 .sign-up form {
+	background: #ffffff;
+	width: 34.5rem;
 	display: flex;
-	padding: 0.5rem 0 5.5rem;
+	flex-shrink: 1;
+	border-radius: 2.1rem;
+	margin: 0 0.5rem;
+}
+.sign-up input {
+	border: none;
+	background: none;
+	padding: 0 0 0 2.5rem;
+	line-height: 2.8rem;
+	font-size: 1.4rem;
+	flex:1;
+}
+.sign-up input::placeholder {
+	color: #999999;
+	font-family: 'Raleway' , sans-serif;
+}
+.sign-up button {
+	border: none;
+	line-height: 3.4rem;
+	background: #e2574c;
+	color: white;
+	margin: 0.4rem;
+	flex:0 10.5rem;
+	font-size: 1.4rem;
+	border-radius:inherit;
 }
 
 footer {
