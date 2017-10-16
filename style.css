@@ -154,8 +154,9 @@ table {
   top:auto;
   width:1px;
   height:1px;
-  overflow:hidden;
+	overflow:hidden;
 }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -166,14 +167,16 @@ body {
   font-size: 1.4rem;
 	width: 100%;
 	color: #2d2d2d;
-	background: url('aloha-mobile.png') no-repeat center top;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Playfair Display', serif;
 }
 a {
 	text-decoration: none;
 	color: #e2574c;
+}
+a:hover {
+	color: #b64036;
 }
 header {
   display: flex;
@@ -190,6 +193,7 @@ header>nav {
 	border-top: 1px solid #d7d7d7;
 	text-transform: uppercase;
 	font-weight: 500;
+	font-size: 14px;
 }
 header>nav>ul {
 	flex: 100%;
@@ -197,7 +201,7 @@ header>nav>ul {
 	justify-content: space-around;
 	align-content: center;
 }
-header>a>img {
+header>div>a>img {
 	height: 4.7rem;
 	padding: 1.4rem 1rem 1rem;
 }
@@ -218,7 +222,7 @@ header>a>img {
 	flex-flow: row wrap;
 	color: #ffffff;
 }
-.hero-banner>a p {
+.hero-banner p {
 	flex: 100%;
 	display: flex;
 	justify-content: center;
@@ -228,7 +232,7 @@ header>a>img {
 	font-weight: 500;
 	text-shadow: .24rem .24rem .24rem rgba(24,24,24,0.24);
 }
-.hero-banner>a h2 {
+.hero-banner h2 {
 	flex: 100%;
 	display: flex;
 	justify-content: center;
@@ -256,7 +260,7 @@ header>a>img {
 	font-style: italic;
 	font-weight: normal;
 }
-.shop-categories>ul {
+.shop-categories ul {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -327,47 +331,36 @@ header>a>img {
 .most-loved p {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #999999;
+	color: #969696;
 }
 .product-display {
-	display: flex;
-	overflow: hidden;
-	width:100%;
+	margin-bottom: 6.4rem;
 }
 .product-display li {
-	flex: 100%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
 }
 .product-display li h3 {
-	width: 100vw;
-	display: flex;
-	justify-content: center;
+	flex: 100%;
+	text-align: center;
 	padding: 2rem 0;
-	font-size: 2rem;
+	font-size: 2.1rem;
 }
 .product-display li p {
-	width: 100vw;
-	display: flex;
-	justify-content: center;
+	flex: 100%;
+	text-align: center;
 
 }
 .product-display li p:first-of-type {
 	font-size: 1rem;
 }
+.product-display li p:last-of-type {
+	padding-bottom:4.1rem;
+}
 .product-display li img {
 	padding: 0.5rem;
-}
-.product-buttons {
-	display: flex;
-	justify-content: center;
-	font-size: 1.2rem;
-	padding: 5.3rem 50% 4rem;
-}
-.product-buttons button {
-	background: none;
-	border: none;
 }
 
 .sign-up {
@@ -394,11 +387,11 @@ header>a>img {
 }
 .sign-up form {
 	background: #ffffff;
-	width: 34.5rem;
 	display: flex;
 	flex-shrink: 1;
 	border-radius: 2.1rem;
 	margin: 0 0.5rem;
+	flex: 0 1 60%;
 }
 .sign-up input {
 	border: none;
@@ -407,9 +400,10 @@ header>a>img {
 	line-height: 2.8rem;
 	font-size: 1.4rem;
 	flex:1;
+	font-family: 'Raleway' , sans-serif;
 }
 .sign-up input::placeholder {
-	color: #999999;
+	color: #969696;
 	font-family: 'Raleway' , sans-serif;
 }
 .sign-up button {
@@ -418,7 +412,7 @@ header>a>img {
 	background: #e2574c;
 	color: white;
 	margin: 0.4rem;
-	flex:0 10.5rem;
+	flex:0 1 33%;
 	font-size: 1.4rem;
 	border-radius:inherit;
 }
@@ -444,7 +438,7 @@ footer a{
 	line-height: 2rem;
 }
 .contact-info .address {
-	color: #999999;
+	color: #969696;
 }
 .contact-info a{
 	text-decoration: underline;
@@ -462,6 +456,159 @@ footer a{
 
 /* END OF MOBILE DESIGN */
 /* TABLET DESIGN */
+@media screen and (min-width:600px) {
+	body {
+		font-size: 1.6rem;
+	}
+	header {
+		flex-flow: row nowrap;
+		padding: 0 0 1rem;
+		justify-content: space-between;
+	}
+	header nav{
+		order: 0;
+		border: none;
+		font-size: 14px;
+		padding: 1.4rem 0 0;
+		flex:0 0 30rem;
+	}
+	header>div {
+		flex: 1 1 50%;
+	}
+	header>div:last-of-type {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+
+	.hero-banner p {
+		font-size: 2rem;
+	}
+	.hero-banner h2 {
+		margin: 0;
+		font-size: 4.8rem;
+	}
+	.shop-categories p {
+		font-size: 1.8rem;
+		padding:2.7rem 2rem 6.5rem;
+		line-height: 3.6rem;
+	}
+	.shop-categories h2 {
+		font-size: 4rem;
+		padding: 6rem 0 0 0;
+	}
+	.shop-categories ul {
+		height: 50vw;
+	}
+	.mens-category {
+		flex:0 49.5%;
+		height: 24.5vw;
+	}
+	.trends-category {
+		flex:0 24%;
+		height: 24.5vw;
+	}
+	.glasses-category {
+		flex:0 24.5%;
+		height: 24.5vw;
+	}
+	.sale-category {
+		flex:0 24.5%;
+		height: 24.5vw;
+	}
+	.bags-category {
+		flex:0 24%;
+		height: 24.5vw;
+	}
+	.womens-category {
+		flex:0 49.5%;
+		height: 24.5vw;
+	}
+	.shop-categories a {
+		font-size: 3rem;
+	}
+
+	.most-loved h2 {
+		font-size: 4.2rem;
+		padding: 6rem 0;
+	}
+	.product-display {
+		margin-bottom: 8rem;
+	}
+	.product-display li {
+		width: 50%;
+	}
+	.product-display li h3 {
+		font-size: 2.5rem;
+		flex: 0 1 66.666%;
+		padding: 2rem 16.666%;
+	}
+	.product-display li p:first-of-type {
+		font-size: 1.2rem;
+	}
+	.product-display li img {
+		padding: 2rem 0.5rem 0.5rem;
+		height: 23.3rem;
+	}
+	.sign-up {
+		padding: 5.8rem 0 5.6rem;
+	}
+	.sign-up h2 {
+		font-size: 4.2rem;
+	}
+	.sign-up p {
+		font-size: 1.8rem;
+		line-height: 3.6rem;
+		padding: 2.8rem 2rem;
+	}
+	.sign-up form {
+		border-radius: 2.3rem;
+		margin: 0 0 1.1rem;
+	}
+	.sign-up input {
+		line-height: 4.4rem;
+		font-size: 1.6rem;
+	}
+	.sign-up button {
+		line-height: 4rem;
+		font-size: 1.6rem;
+	}
+
+	footer {
+		justify-content: space-between;
+	}
+	.contact-info {
+		flex: 50%;
+		padding: 0 0 2.5rem;
+	}
+	.contact-info p {
+		text-align: left;
+		padding: 0 0 0 1rem;
+		line-height: 2.4rem;
+	}
+	.social-media {
+		flex:0 25%;
+		padding: 0;
+	}
+	.social-media>ul {
+		flex-flow: row wrap;
+	}
+	.social-media>ul li {
+		flex: 100%;
+		line-height: 3.2rem;
+	}
+	.social-media ul li i {
+		width: 20%;
+	}
+	.social-media .hidden {
+		position: initial;
+		left: initial;
+		top: initial;
+		width: initial;
+		height: initial;
+		overflow: initial;
+	}
+}
 
 /* END OF TABLET DESIGN */
 /* DESKTOP DESIGN */

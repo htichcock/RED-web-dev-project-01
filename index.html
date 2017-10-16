@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
-    <script src="https://use.fontawesome.com/51c3393f45.js"></script>
-    <title>Aloha Apparel Co.</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aloha Apparel Co.</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/51c3393f45.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
     <header>
       <h1 class="hidden">Aloha Apparel Co.</h1>
-      <a href="index.html"><img src="images/aloha-logo.svg" alt="Aloha Apparel Co. Logo" title="Aloha Apparel Co."></a>
+      <div><a href="index.html"><img src="images/aloha-logo.svg" alt="Aloha Apparel Co. Logo" title="Aloha Apparel Co."></a></div>
       <nav>
         <ul>
           <li>
-            <a href="about.html">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="shop/shop.html">Shop</a>
+            <a href="#shop">Shop</a>
           </li>
           <li>
-            <a href="shop/featured.html">Featured</a>
+            <a href="#featured">Featured</a>
           </li>
           <li>
-            <a href="updates.html">Updates</a>
+            <a href="#updates">Updates</a>
           </li>
         </ul>
       </nav>
-      <a href="cart.html"><img src="images/cart-icon.svg" alt="Go to My Cart" title="Go to My Cart"></a>
+      <div><a href="#"><img src="images/cart-icon.svg" alt="Go to My Cart" title="Go to My Cart"></a></div>
     </header>
     <section class="hero-banner">
-      <a href="shop/new-collection.html">
+      <a href="#">
         <p>New Collection</p>
         <h2>Spring/Summer 2016</h2>
       </a>
     </section>
     <section class="shop-categories">
       <h2><span class="italics">Hand-Crafted</span> Styles</h2>
-      <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for mens below</p>
+      <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
       <ul>
         <li class="mens-category">
-          <a href="shop/mens.html">Men's</a>
+          <a href="#">Men's</a>
         </li>
         <li class="trends-category">
-          <a href="shop/trends.html">Trends</a>   
+          <a href="#">Trends</a>   
         </li>
         <li class="glasses-category">
-          <a href="shop/glasses.html">Glasses</a>
+          <a href="#">Glasses</a>
         </li>
         <li class="sale-category">
-          <a href="shop/sale.html">Sale</a>  
+          <a href="#">Sale</a>  
         </li>
         <li class="bags-category">
-          <a href="shop/bags.html">Bags</a>
+          <a href="#">Bags</a>
         </li>
         <li class="womens-category">
-          <a href="shop/womens.html">Women's</a>
+          <a href="#">Women's</a>
         </li>
       </ul>
     </section>
     <section class="most-loved">
       <h2><span class="italics">Most-Loved</span> Products</h2>
-      <ul class="product-display">
-        <li>
+      <ul class="product-display main-carousel">
+        <li class="carousel-cell">
           <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
           <p>Dresses</p>
-          <a href=""><h3>Checked Stretch Dress</h3></a>
+          <a href="#"><h3>Checked Stretch Dress</h3></a>
           <p>$129.00</p>
         </li>
-        <li>
+        <li class="carousel-cell">
           <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Bag">
           <p>Bags</p>
-          <a href=""><h3>Blue Hipster Bag</h3></a>
+          <a href="#"><h3>Blue Hipster Backpack</h3></a>
           <p>$69.00</p>
         </li>
-        <li>
+        <li class="carousel-cell">
           <img src="images/demin-overall-shorts.jpg" alt="Demin Overall Shorts">
           <p>Demin</p>
-          <a href=""><h3>Demin Overall Shorts</h3></a>
+          <a href="#"><h3>Demin Overall Shorts</h3></a>
           <p>$89.00</p>
         </li>
-        <li>
+        <li class="carousel-cell">
           <img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
           <p>Dresses</p>
-          <a href=""><h3>Pink Dotted Dress</h3></a>
+          <a href="#"><h3>Pink Dotted Dress</h3></a>
           <p>$99.00</p>
         </li>
       </ul>
-      <ul class="product-buttons">
+      <!-- <ul class="product-buttons">
         <li><button class="fa fa-circle"></button></li>
         <li><button class="fa fa-circle"></button></li>
         <li><button class="fa fa-circle"></button></li>
         <li><button class="fa fa-circle"></button></li>
-      </ul>
+      </ul> -->
     </section>
     <section class="sign-up">
       <h2><span class="italics">Sign-up for</span> Updates</h2>
@@ -114,11 +116,11 @@
       </div>
       <div class="social-media">
         <ul>
-          <li><a href=""><i class="fa fa-facebook-f"></i><span class="hidden">Facebook</span></a></li>
-          <li><a href=""><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a></li>
-          <li><a href=""><i class="fa fa-instagram"></i><span class="hidden">Instragram</span></a></li>
-          <li><a href=""><i class="fa fa-pinterest"></i><span class="hidden">Pinterest</span></a></li>
-          <li><a href=""><i class="fa fa-google-plus"></i><span class="hidden">Google+</span></a></li>
+          <li><a href="#"><i class="fa fa-facebook-f"></i><span class="hidden">Facebook</span></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i><span class="hidden">Twitter</span></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i><span class="hidden">Instragram</span></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i><span class="hidden">Pinterest</span></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i><span class="hidden">Google+</span></a></li>
         </ul>
       </div>
     </footer>
