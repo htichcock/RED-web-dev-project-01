@@ -159,7 +159,9 @@ table {
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+}
+* {
+	box-sizing: border-box;
 }
 /* MOBILE DESIGN */
 body {
@@ -193,7 +195,7 @@ header>nav {
 	border-top: 1px solid #d7d7d7;
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 header>nav>ul {
 	flex: 100%;
@@ -203,7 +205,7 @@ header>nav>ul {
 }
 header>div>a>img {
 	height: 4.7rem;
-	padding: 1.4rem 1rem 1rem;
+	margin: 1.4rem 1rem 1rem;
 }
 
 .hero-banner {
@@ -392,6 +394,7 @@ header>div>a>img {
 	border-radius: 2.1rem;
 	margin: 0 0.5rem;
 	flex: 0 1 60%;
+	max-width:45rem;
 }
 .sign-up input {
 	border: none;
@@ -529,7 +532,7 @@ footer a{
 	}
 
 	.most-loved h2 {
-		font-size: 4.2rem;
+		font-size: 4rem;
 		padding: 6rem 0;
 	}
 	.product-display {
@@ -541,20 +544,20 @@ footer a{
 	.product-display li h3 {
 		font-size: 2.5rem;
 		flex: 0 1 66.666%;
-		padding: 2rem 16.666%;
+		padding: 2.2rem 16.666%;
 	}
 	.product-display li p:first-of-type {
 		font-size: 1.2rem;
 	}
 	.product-display li img {
-		padding: 2rem 0.5rem 0.5rem;
-		height: 23.3rem;
+		padding: 2.5rem 0.5rem 0.5rem;
+		height: 25.5rem;
 	}
 	.sign-up {
 		padding: 5.8rem 0 5.6rem;
 	}
 	.sign-up h2 {
-		font-size: 4.2rem;
+		font-size: 4rem;
 	}
 	.sign-up p {
 		font-size: 1.8rem;
@@ -612,7 +615,47 @@ footer a{
 
 /* END OF TABLET DESIGN */
 /* DESKTOP DESIGN */
+@media screen and (min-width:1240px) {
+	header>nav {
+		font-size: 1.6rem;
+		flex: 0 0 40rem;
+	}
+	header>div>a>img {
+		height:6rem;
+		margin:1.4rem 4.5rem 1rem;
+	}
 
+	.hero-banner {
+		height: 55rem;
+		background: linear-gradient(rgba(24,24,24,0.24), rgba(24,24,24,0.24)),
+		no-repeat 50% 6rem/auto 112% url("images/banner-girl.png"),
+		repeat-x center/auto 55rem url("images/flower-bkgd.jpg");
+	}
+	.hero-banner h2{
+		font-size: 6.4rem;
+	}
+
+	.shop-categories p {
+		margin: 0 23%;
+	}
+	.sign-up p {
+		margin: 0 22%;
+	}
+
+	.product-display li{
+		width: 25%;
+	}
+
+	footer {
+		padding: 6.5rem 0;
+	}
+	.contact-info p{
+		padding: 0 0 0 5rem;
+	}
+	.social-media {
+		flex:0 16.5%;
+	}
+}
 /* END OF DESKTOP DESIGN */
 /* body {
   font-family: 'Raleway', sans-serif;
