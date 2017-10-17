@@ -2,6 +2,8 @@
 
 Aloha Website project using html5, CSS3, and jQuery
 
+[Hosted here with GitHub Pages]('https://htichcock.github.io/RED-web-dev-project-01/')
+
 ## HTML
 
 I used html5 semantics and used lists to later be formatted with flexbox. The html was written with accessibility in mind. The head links to CDN's for jQuery, FontAwesome, and Flickity libraries. 
