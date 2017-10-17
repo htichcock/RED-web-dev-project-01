@@ -1,6 +1,7 @@
 $(function(){
   $('.main-carousel').flickity({
     // options
+    wrapAround: true,
     autoPlay: true,
     prevNextButtons: false,
     cellAlign: 'left',
