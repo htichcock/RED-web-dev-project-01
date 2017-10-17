@@ -2,7 +2,7 @@
 
 Aloha Website project using html5, CSS3, and jQuery
 
-[Hosted here with GitHub Pages]('https://htichcock.github.io/RED-web-dev-project-01/')
+[Hosted here with GitHub Pages](https://htichcock.github.io/RED-web-dev-project-01/)
 
 ## HTML
 
