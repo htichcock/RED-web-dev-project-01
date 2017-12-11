@@ -14,7 +14,7 @@ $(function () {
     //reg exp from http://regexlib.com/REDetails.aspx?regexp_id=26
     var regExpEmail = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
     if (regExpEmail.test($('#email-input').val())) {
-      $('#email-input').val("").attr("placeholder", "Thank you for subcribing!");
+      $('#email-input').val("").attr("placeholder", "Thanks!");
       alert('Thank you for subscribing!');
     } else {
       $('#email-input').attr("placeholder", "Invalid Address");
